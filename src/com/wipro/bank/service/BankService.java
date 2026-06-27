@@ -27,7 +27,7 @@ public class BankService {
 		  RDA.setInterest(age, gender);
 		float Interest = RDA.calculateInterest();
 		float AmountDeposited = RDA.calculateAmountDeposited();
-		float MaturityAmount = RDA.calculateMaturityAmount(principal, age);
+		float MaturityAmount = RDA.calculateMaturityAmount(AmountDeposited ,Interest );
 		System.out.println("Interest:"+Interest);
 		System.out.println("Amount Deposited:"+AmountDeposited);
 		System.out.println("Maturity Amount:"+MaturityAmount);

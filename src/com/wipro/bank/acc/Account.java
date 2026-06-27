@@ -17,8 +17,8 @@ public void setInterest(int age, String gender) {
 		setRateOfInterest(10.8f);
 	}
 }
- public float calculateMaturityAmount(float totalPrincipleDeposited, float maturityInterest){
-	return totalPrincipleDeposited + maturityInterest;
+ public float calculateMaturityAmount(float totalPrincipalDeposited, float maturityInterest){
+    return totalPrincipalDeposited + maturityInterest;
 }
  public abstract float calculateInterest();
  public abstract float calculateAmountDeposited();
