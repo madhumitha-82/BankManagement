@@ -10,11 +10,11 @@ public float calculateAmountDeposited() {
 }
 public float calculateInterest() {
 	float p = principal;//Principal.
-	float r = getRateOfInterest();//rateOfInterest/100. 
+	float r = rateOfInterest;//rateOfInterest/100. 
 	float n = r/(12*100.0f);//no of quarters in a year(4).
 	float t = tenure*12;//no of months remaining converted as years (60/12).
 	double maturityAmount = p* ((Math.pow(1+n, t)-1)/n)*(1+n);
 	double totalDeposited = calculateAmountDeposited();
 	return (float)(maturityAmount - totalDeposited); 
-}
+} 
 }

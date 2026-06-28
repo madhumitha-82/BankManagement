@@ -1,6 +1,6 @@
 package com.wipro.bank.service;
 
-import com.wipro.bank.acc.RDAccount;
+import com.wipro.bank.acc.RDAccount; 
 import com.wipro.bank.exception.BankValidationException;
 
 public class BankService {
@@ -31,7 +31,7 @@ public class BankService {
 		System.out.println("Interest:"+Interest);
 		System.out.println("Amount Deposited:"+AmountDeposited);
 		System.out.println("Maturity Amount:"+MaturityAmount);
-		System.out.println("Principal:"+RDA.getRateOfInterest() +"%");
+		System.out.println("Principal:"+RDA.rateOfInterest +"%");  
 		
 	 }
 
